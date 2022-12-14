@@ -31,7 +31,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // After index.html loads in the browser, the React app's client-side routing will render components based upon the /orders/newpath in the address bar.
 
-
+// Put API routes here, before the "catch all" route
+app.use('/api/users', require('./routes/api/users'));
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
