@@ -1,4 +1,4 @@
-import { checkToken } from "../utilities/users-service"
+import { checkToken } from "../../utilities/users-service"
 import { useState } from "react"
 export default function OrderHistoryPage (props) {
     const [expDate,setExpDate] = useState('')

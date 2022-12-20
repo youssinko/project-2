@@ -1,5 +1,6 @@
-import SignUpForm from "../components/SignUpForm"
-import LoginForm from "../components/LoginForm"
+import SignUpForm from "../../components/SignUpForm/SignUpForm"
+import LoginForm from "../../components/LoginForm/LoginForm"
+import './AuthPage.module.css'
 
 export default function AuthPage({setUser}){
     return(
