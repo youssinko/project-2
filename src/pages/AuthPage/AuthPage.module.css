@@ -1,0 +1,7 @@
+button{
+    background-color: rgb(241, 61, 151);
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(50, 190, 190);
+}
