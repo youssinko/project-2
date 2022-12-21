@@ -10,12 +10,13 @@ function ControlledCarousel() {
     };
   
     return (
-      <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel activeIndex={index} onSelect={handleSelect} >
         <Carousel.Item>
           <img
             className="d-block w-100"
             src="../shirtss.webp"
             alt="Second slide"
+            
           />
   
           <Carousel.Caption>
@@ -56,7 +57,6 @@ function ControlledCarousel() {
   export default function HomePage() {
   return (
     <>
-    <div className='homepage'>HomePage</div>
     <ControlledCarousel />
     </>
   )

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import * as userService from "../utilities/users-service";
-import Nav from "react-bootstrap/Nav";
+import {Nav,NavDropdown} from "react-bootstrap";
+
 
 export default function NavBar({ user, setUser }) {
   function handleLogout() {
@@ -10,15 +11,22 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <Nav>
-      <Link to="/">Home</Link>
-      <Link to="/orders">Order History</Link>
-      <Link to="/orders/new">New Order</Link>
-      Welcome, {user.name}
+    <Nav variant="tabs" defaultActiveKey="/home">
+     
+       <Nav.Link href="/">Home</Nav.Link>
+     
+      <Nav.Link href="/orders">Order History</Nav.Link>
+      
+      <Nav.Link href="/orders/new">New Order</Nav.Link>
+
+     
+      
       {/* &nbsp;{user.email} */}
-      <Link to="" onClick={handleLogout}>
-        Log Out
-      </Link>
-    </Nav>
+      <NavDropdown title={`Welcome, ${user.name}` }id="nav-dropdown">
+        <Nav.Link href="" onClick={handleLogout} eventKey="4.1">Log Out</Nav.Link>
+        </NavDropdown>
+     
+        </Nav>
+    
   );
 }

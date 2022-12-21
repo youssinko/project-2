@@ -2,7 +2,18 @@
 .App {
   text-align: center;
   position: relative;
+  background-color: rgb(33,33,33);
+  color:rgba(255, 238, 0, 0.989);
+  font-size: 15pt
  
+}
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background-color: coral;
+  filter: blur(72pt);
 }
 
 .App-logo {

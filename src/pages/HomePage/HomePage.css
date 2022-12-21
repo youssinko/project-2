@@ -13,6 +13,7 @@
     
    .carousel-item.active, .carousel-item .view {
     height: 50vh!important;
+   
     
   }
   .carousel-item.active, .carousel-item  {
@@ -23,6 +24,7 @@
     object-fit: cover;
     width:100%!important;
     height: 100% !important;
+    
   }
 
   .content h1 {
@@ -93,3 +95,6 @@
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
+.carousel-caption{
+  background-color: transparent;
+}
